@@ -51,6 +51,10 @@
             justify-content: center;
         }
 
+        .ml_10 {
+            margin: 0 0 0 10px;
+        }
+
         .mb_5 {
             margin: 0 0 5px 0;
         }
@@ -59,20 +63,36 @@
             margin: 0 0 25px 0;
         }
 
+        .mt_15 {
+            margin: 15px 0 0 0;
+        }
+
         .mv_25 {
             margin: 25px 0px;
         }
 
         .box_profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
             height: 217px;
             border: 1px solid #666;
+            padding: 15px;
         }
 
         .box_small {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: 120px;
             border: 1px solid #666;
+        }
+
+        .box_small_list {
+            flex: 1;
+            display: flex;
+            align-items: center;
         }
 
         .banner {
@@ -91,43 +111,172 @@
             width: 295px;
             height: 192px;
         }
+
+        .board_flex {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .board_list {
+            display: flex;
+            margin: 0px 10px;
+            align-items: center;
+            flex: 1;
+        }
+
+        .img_profile {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            border: 0px;
+            margin: 15px 41.5px;
+        }
     </style>
 </head>
 
 <body>
     <div class="box_container">
         <div class="container mv_25">
+
+            <!-- 왼쪽 메뉴 시작 -->
             <div class="leftside">
-                <div class="box_profile mb_5">안</div>
+                <div class="box_profile mb_5">
+                    <img class="img_profile" src="/profileImg.png" alt="">
+                    <div>닉네임</div>
+                    <div>이름</div>
+                    <div>username</div>
+                    <ul class="mt_15">
+                        <a href="">내 정보</a>
+                        <a href="">로그아웃</a>
+                    </ul>
+                </div>
+                <div class="box_small mb_5">
+                    <div class="box_small_list ml_10"><a href="">내가 쓴 글</a></div>
+                    <div class="box_small_list ml_10"><a href="">댓글 단 글</a></div>
+                    <div class="box_small_list ml_10"><a href="">내 스크랩</a></div>
+                </div>
                 <div class="box_small mb_5">녕</div>
                 <div class="box_small mb_5">하</div>
                 <div class="box_small mb_5">쇼</div>
             </div>
+            <!-- 왼쪽 메뉴 끝 -->
+
+            <!-- 중간 메뉴 시작 -->
             <div class="main">
                 <div class="banner mb_25">안녕</div>
+
+                <!-- 게시판 시작 -->
                 <div class="box_board mb_5">
                     <div class="board">
-                        <div>
-                            <h3>안</h3>
+                        <div class="board_flex">
+                            <div>
+                                <h3>자유게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
                         </div>
-                        <div><a href="">안</a></div>
-                        <div><a href="">안</a></div>
-                        <div><a href="">안</a></div>
-                        <div><a href="">안</a></div>
                     </div>
                     <div class="board">
-                        박스
+                        <div class="board_flex">
+                            <div>
+                                <h3>비밀게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
                     </div>
                 </div>
                 <div class="box_board mb_5">
                     <div class="board">
-                        박스
+                        <div class="board_flex">
+                            <div>
+                                <h3>졸업생게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+
+                        </div>
                     </div>
                     <div class="board">
-                        박스
+                        <div class="board_flex">
+                            <div>
+                                <h3>새내기게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+
+                        </div>
                     </div>
                 </div>
+                <div class="box_board mb_5">
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3>시사·이슈</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3>취업·진로</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_board mb_5">
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3>홍보게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3>동아리·학회</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_board mb_5">
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3>장터게시판</h3>
+                            </div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                            <div class="board_list"><a href="">안</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 게시판 끝 -->
             </div>
+            <!-- 중간 메뉴 끝 -->
+
             <div class="rightside"></div>
         </div>
     </div>
