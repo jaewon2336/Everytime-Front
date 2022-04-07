@@ -24,4 +24,9 @@ public class TestController {
     public String test() {
         return "board/clubBoard";
     }
+
+    @GetMapping("/forgot")
+    public String findUsername() {
+        return "user/findUsernameForm";
+    }
 }
