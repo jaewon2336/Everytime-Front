@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기 - 에브리타임</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            margin: 24px auto;
+            width: 480px;
+        }
+
+        .find_box {
+            box-sizing: border-box;
+            border: 1px solid #ededed;
+            border-radius: 12px;
+        }
+
+        .menu {
+            width: 100%;
+            height: 48px;
+            background-color: #ffffff;
+            margin-top: 24px;
+            padding-left: 16px;
+        }
+
+        .menu a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 8px 14px 8px;
+        }
+
+        .active {
+            border-bottom: 2px solid #c62917;
+            color: #C62917;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 24px;
+            font-size: 16px;
+        }
+
+        .non_active {
+            display: inline-block;
+            line-height: 24px;
+            color: #a6a6a6;
+            font-size: 16px;
+        }
+
+        form {
+            padding: 24px;
+            display: block;
+        }
+
+        .input_email {
+            border: 1px solid #ededed;
+            color: #292929;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            display: block;
+            border-radius: 12px;
+            width: 100%;
+            height: 40px;
+            caret-color: #C62917;
+        }
+
+        .btn_findUsername {
+            border: 0;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #C62917;
+            margin-top: 8px;
+            display: block;
+            border-radius: 12px;
+            width: 100%;
+            height: 40px;
+        }
+
+        .description {
+            margin-top: 24px;
+        }
+
+        .description p {
+            margin-bottom: 4px;
+            line-height: 18px;
+            color: #737373;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="find_box">
+            <div class="menu">
+                <a href="#"><span class="active">아이디 찾기</span></a>
+                <a href="#"><span class="non_active">비밀번호 찾기</span></a>
+            </div>
+
+            <div>
+                <form action="#">
+                    <input class="input_email" type="email" placeholder="가입된 이메일">
+                    <input class="btn_findUsername" type="submit" value="아이디 찾기">
+                    <div class="description">
+                        <p>※ 가입된 아이디가 있을 경우, 입력하신 이메일로 아이디를 안내해 드립니다.</p>
+                        <p>※ 만약 이메일이 오지 않는다면, 스팸 편지함으로 이동하지 않았는지 확인해주세요.</p>
+                        <p>※ 이메일 서비스 제공자 사정에 의해 즉시 도착하지 않을 수 있으니, 최대 30분 정도 기다리신 후 다시 시도해주세요.</p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
