@@ -9,4 +9,14 @@ public class TestController {
     public String main() {
         return "layout/header";
     }
+
+    @GetMapping("/loginForm")
+    public String loginForm() {
+        return "user/loginForm";
+    }
+
+    @GetMapping("/board")
+    public String test() {
+        return "board/clubBoard";
+    }
 }
