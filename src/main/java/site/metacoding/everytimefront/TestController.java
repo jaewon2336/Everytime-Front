@@ -15,6 +15,11 @@ public class TestController {
         return "user/loginForm";
     }
 
+    @GetMapping("/joinForm")
+    public String joinForm() {
+        return "user/joinForm";
+    }
+
     @GetMapping("/board")
     public String test() {
         return "board/clubBoard";
