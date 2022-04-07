@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.m_navbar {
+    border-bottom: 1px solid #d6d6d6;
+    justify-content: space-around;
+}
+
+.header_navbar_flex {
+    display: flex;
+    align-items: center;
+}
+
+.m_space {
+    padding: 0px 50px;
+}
+
+.header_logo_flex {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo_title {
+    font-size: 6px;
+    font-weight: 800;
+    color: #C62917;
+}
+
+.header_logo_school {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header_menu {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.header_menu a {
+    padding: 0px 5px;
+}
+
+.header_icon_flex {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    width: 15px;
+    height: 15px;
+}
+
+.nav_box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+}
+
+.sub_menu {
+    padding-top: 80px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
+.driver {
+    display: inline-block;
+    width: 1px;
+    height: 200px;
+    background-color: #e3e3e3;
+}
+
+.group {
+    display: inline-block;
+    margin-right: 15px;
+    padding-top: 15px;
+    width: 130px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.group li {
+    padding: 3px 0px;
+}
+
+h4 {
+    text-align: center;
+}
+
+div {
+    color: #666;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: red;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer div {
+    padding-right: 13px;
+}
