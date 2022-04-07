@@ -21,26 +21,40 @@
 .header_logo_flex {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .header_logo_title {
     font-size: 6px;
-    font-weight: 800;
+    font-weight: bold;
     color: #C62917;
 }
 
 .header_logo_school {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
+    color: #444444;
 }
 
 .header_menu {
+    color: #444444;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: bold;
+    display: flex;
 }
 
 .header_menu a {
     padding: 0px 5px;
+}
+
+.header_menu li {
+    height: 80px;
+    line-height: 80px;
+    
+}
+
+.active {
+    border-bottom: 4px solid #C62917;
 }
 
 .header_icon_flex {
@@ -48,20 +62,22 @@
     align-items: center;
 }
 
-svg {
-    width: 15px;
-    height: 15px;
-}
-
-.nav_box {
+.header_icon_box {
     width: 40px;
     height: 40px;
     border: 1px solid #d6d6d6;
     border-radius: 12px;
+    margin: 0px 4px;
+}
+
+.header_icon_box img {
+    margin: 7px 8px;
+    
 }
 
 .sub_menu {
-    padding-top: 80px;
+    padding-top: 90px;
+    height: 280px;
     border-bottom: 1px solid #d6d6d6;
     background-color: #f2f2f2;
     display: flex;
@@ -71,7 +87,7 @@ svg {
 .driver {
     display: inline-block;
     width: 1px;
-    height: 200px;
+    height: 185px;
     background-color: #e3e3e3;
 }
 
@@ -86,12 +102,10 @@ svg {
 }
 
 .group li {
-    padding: 3px 0px;
+    padding: 2px 0px;
 }
 
-h4 {
-    text-align: center;
-}
+
 
 div {
     color: #666;
@@ -109,7 +123,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: #C62917;
 }
 
 .footer {
