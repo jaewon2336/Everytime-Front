@@ -48,7 +48,7 @@
             display: flex;
             width: 325px;
             height: 100%;
-            justify-content: center;
+            flex-direction: column;
         }
 
         .ml_10 {
@@ -106,6 +106,27 @@
             justify-content: space-between;
         }
 
+        .box_rightside {
+            display: flex;
+            width: 323px;
+            height: 230px;
+            flex-direction: column;
+        }
+
+        /* 
+        .box_rightside_flex {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        } */
+
+        .box_rightside_list {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
         .board {
             display: inline-block;
             width: 295px;
@@ -121,7 +142,6 @@
 
         .board_list {
             display: flex;
-            margin: 0px 10px;
             align-items: center;
             flex: 1;
         }
@@ -132,6 +152,19 @@
             border-radius: 6px;
             border: 0px;
             margin: 15px 41.5px;
+        }
+
+        .search {
+            display: flex;
+            width: 325px;
+            height: 40px;
+            align-items: center;
+        }
+
+        .search_text {
+            width: 301px;
+            height: 16px;
+            padding: 10px;
         }
     </style>
 </head>
@@ -153,9 +186,9 @@
                     </ul>
                 </div>
                 <div class="box_small mb_5">
-                    <div class="box_small_list ml_10"><a href="">내가 쓴 글</a></div>
-                    <div class="box_small_list ml_10"><a href="">댓글 단 글</a></div>
-                    <div class="box_small_list ml_10"><a href="">내 스크랩</a></div>
+                    <div class="box_small_list"><a href="">내가 쓴 글</a></div>
+                    <div class="box_small_list"><a href="">댓글 단 글</a></div>
+                    <div class="box_small_list"><a href="">내 스크랩</a></div>
                 </div>
                 <div class="box_small mb_5">녕</div>
                 <div class="box_small mb_5">하</div>
@@ -198,7 +231,6 @@
                             </div>
                             <div class="board_list"><a href="">안</a></div>
                             <div class="board_list"><a href="">안</a></div>
-
                         </div>
                     </div>
                     <div class="board">
@@ -208,7 +240,6 @@
                             </div>
                             <div class="board_list"><a href="">안</a></div>
                             <div class="board_list"><a href="">안</a></div>
-
                         </div>
                     </div>
                 </div>
@@ -276,8 +307,35 @@
                 <!-- 게시판 끝 -->
             </div>
             <!-- 중간 메뉴 끝 -->
-
-            <div class="rightside"></div>
+            <!-- 오른쪽 메뉴 시작 -->
+            <div class="rightside">
+                <form class="search mb_5" action="">
+                    <input class="search_text" type="text" placeholder="전체 게시판의 글을 검색하세요!">
+                </form>
+                <div class="box_rightside mb_5">
+                    <!-- <div class="box_rightside_flex"> -->
+                    <div>
+                        <h3>실시간 인기 글</h3>
+                    </div>
+                    <div class="box_rightside_list">안</div>
+                    <div class="box_rightside_list">안</div>
+                    <!-- </div> -->
+                </div>
+                <div class="box_rightside">
+                    <!-- <div class="box_rightside_flex"> -->
+                    <div>
+                        <h3>HOT 게시물</h3>
+                    </div>
+                    <div class="box_rightside_list">안</div>
+                    <div class="box_rightside_list">안</div>
+                    <div class="box_rightside_list">안</div>
+                    <div class="box_rightside_list">안</div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- 오른쪽 메뉴 끝 -->
+            <div>
+            </div>
         </div>
     </div>
 </body>
