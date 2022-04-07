@@ -29,4 +29,9 @@ public class TestController {
     public String findUsername() {
         return "user/findUsernameForm";
     }
+
+    @GetMapping("/forgot/password")
+    public String findPassword() {
+        return "user/findPasswordForm";
+    }
 }
