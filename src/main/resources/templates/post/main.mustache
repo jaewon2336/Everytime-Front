@@ -5,16 +5,40 @@
     <title>에브리타임</title>
 
     <style>
-        h3 {
-            padding: 10px;
-        }
-
         * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
             border: 0px solid black;
         }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #444444;
+            overflow: hidden;
+            white-space: normal;
+            line-height: 18px;
+            height: 36px;
+            margin-bottom: 5px;
+        }
+
+        time {
+            float: left;
+            margin-right: 10px;
+            height: 14px;
+            color: #a6a6a6;
+            font-size: 11px;
+            letter-spacing: 0;
+        }
+
 
         .box_container {
             display: flex;
@@ -155,17 +179,31 @@
             height: 192px;
         }
 
+        .board_title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #c62917;
+        }
+
         .board_flex {
             display: flex;
             width: 100%;
             height: 100%;
             flex-direction: column;
+            border: 1px solid #d6d6d6;
         }
 
         .board_list {
             display: flex;
+
             align-items: center;
             flex: 1;
+            border-top: 1px solid #e3e3e3;
+            padding: 0 10px;
+        }
+
+        .board_content {
+            flex-direction: column;
         }
 
         .btns {
@@ -257,6 +295,43 @@
             color: #444444;
             width: 100%;
         }
+
+
+
+
+
+        .vote {
+            background-image: url("/vote.png");
+            float: left;
+            margin-right: 5px;
+            padding-left: 15px;
+            height: 14px;
+            line-height: 14px;
+            font-size: 11px;
+            letter-spacing: 0;
+            background-repeat: no-repeat;
+            background-size: 11px 11px;
+            background-position: left center;
+        }
+
+        .comment {
+            background-image: url("/comment.png");
+            float: left;
+            margin-right: 5px;
+            padding-left: 15px;
+            height: 14px;
+            line-height: 14px;
+            font-size: 11px;
+            letter-spacing: 0;
+            background-repeat: no-repeat;
+            background-size: 11px 11px;
+            background-position: left center;
+        }
+
+        .status {
+            float: left;
+            list-style: none;
+        }
     </style>
 </head>
 
@@ -300,65 +375,41 @@
                     <div class="board">
                         <div class="board_flex">
                             <div>
-                                <h3>자유게시판</h3>
+                                <h3><a class="board_title" href="">자유게시판</a></h3>
                             </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
                         </div>
                     </div>
                     <div class="board">
                         <div class="board_flex">
                             <div>
-                                <h3>비밀게시판</h3>
+                                <h3><a class="board_title" href="">비밀게시판</a></h3>
                             </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_board mb_5">
-                    <div class="board">
-                        <div class="board_flex">
-                            <div>
-                                <h3>졸업생게시판</h3>
-                            </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                        </div>
-                    </div>
-                    <div class="board">
-                        <div class="board_flex">
-                            <div>
-                                <h3>새내기게시판</h3>
-                            </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box_board mb_5">
-                    <div class="board">
-                        <div class="board_flex">
-                            <div>
-                                <h3>시사·이슈</h3>
-                            </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                        </div>
-                    </div>
-                    <div class="board">
-                        <div class="board_flex">
-                            <div>
-                                <h3>취업·진로</h3>
-                            </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -366,23 +417,59 @@
                     <div class="board">
                         <div class="board_flex">
                             <div>
-                                <h3>홍보게시판</h3>
+                                <h3><a class="board_title" href="">졸업생게시판</a></h3>
                             </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="board">
                         <div class="board_flex">
                             <div>
-                                <h3>동아리·학회</h3>
+                                <h3><a class="board_title" href="">새내기게시판</a></h3>
                             </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a class="board_list" href="">
+                                <div class="board_content">
+                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                    <time>04/08 13:29</time>
+                                    <ul class="status">
+                                        <li class="vote active">3</li>
+                                        <li class="comment active">4</li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -390,12 +477,60 @@
                     <div class="board">
                         <div class="board_flex">
                             <div>
-                                <h3>장터게시판</h3>
+                                <h3><a class="board_title" href="">시사·이슈</a></h3>
                             </div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
-                            <div class="board_list"><a href="">안</a></div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3><a class="board_title" href="">취업·진로</a></h3>
+                            </div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_board mb_5">
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3><a class="board_title" href="">홍보게시판</a></h3>
+                            </div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3><a class="board_title" href="">동아리·학회</a></h3>
+                            </div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_board mb_5">
+                    <div class="board">
+                        <div class="board_flex">
+                            <div>
+                                <h3><a class="board_title" href="">장터게시판</a></h3>
+                            </div>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
+                            <a class="board_list" href="">안</a>
                         </div>
                     </div>
                 </div>
@@ -412,8 +547,8 @@
                     <div>
                         <h3 class="color_secondary">실시간 인기 글</h3>
                     </div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
                     <!-- </div> -->
                 </div>
                 <div class="box_rightside">
@@ -421,10 +556,10 @@
                     <div>
                         <h3 class="color_secondary">HOT 게시물</h3>
                     </div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
-                    <div class="box_rightside_list color_secondary"><a href="">안</a></div>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
+                    <a class="box_rightside_list color_secondary" href="">안</a>
                     <!-- </div> -->
                 </div>
             </div>
