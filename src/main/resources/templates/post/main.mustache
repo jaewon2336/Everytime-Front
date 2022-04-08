@@ -9,7 +9,7 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-            border: 0px solid black;
+            border: 1px solid black;
         }
 
         a {
@@ -20,7 +20,7 @@
             padding: 10px;
         }
 
-        p {
+        .board_p {
             font-size: 13px;
             color: #444444;
             overflow: hidden;
@@ -30,10 +30,20 @@
             margin-bottom: 5px;
         }
 
-        time {
+        .board_content>time {
             float: left;
             margin-right: 10px;
             height: 14px;
+            color: #a6a6a6;
+            font-size: 11px;
+            letter-spacing: 0;
+        }
+
+        .box_rightside_list>time {
+            float: right;
+            margin-left: 10px;
+            height: 17px;
+            line-height: 18px;
             color: #a6a6a6;
             font-size: 11px;
             letter-spacing: 0;
@@ -157,6 +167,7 @@
             width: 323px;
             height: 230px;
             flex-direction: column;
+            border: 1px solid #d6d6d6;
         }
 
         /* 
@@ -169,8 +180,13 @@
 
         .box_rightside_list {
             display: flex;
+            flex: none;
             align-items: center;
             flex: 1;
+            border-top: 1px solid #e3e3e3;
+            padding: 0 10px;
+            justify-content: space-between;
+
         }
 
         .board {
@@ -296,10 +312,6 @@
             width: 100%;
         }
 
-
-
-
-
         .vote {
             background-image: url("/vote.png");
             float: left;
@@ -331,6 +343,37 @@
         .status {
             float: left;
             list-style: none;
+        }
+
+        .search_text {
+            border: 2px solid #d6d6d6;
+            width: 100%;
+            height: 40px;
+            line-height: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            color: #292929;
+            font-size: 14px;
+            background-image: url("/search.png");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+        .rightside_title {
+            color: #3744a5;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hot_title {
+            height: 17px;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #444444;
+            font-size: 14px;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -390,7 +433,7 @@
                             </div>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -401,7 +444,7 @@
                             </a>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -421,7 +464,7 @@
                             </div>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -432,7 +475,7 @@
                             </a>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -450,7 +493,8 @@
                             </div>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ 21세기 먼나라 이웃나라 이탈리아 만화로 보는 조선 왕조 500년
+                                    </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -461,7 +505,7 @@
                             </a>
                             <a class="board_list" href="">
                                 <div class="board_content">
-                                    <p>고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+                                    <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
 
                                     <time>04/08 13:29</time>
                                     <ul class="status">
@@ -545,7 +589,7 @@
                 <div class="box_rightside mb_5">
                     <!-- <div class="box_rightside_flex"> -->
                     <div>
-                        <h3 class="color_secondary">실시간 인기 글</h3>
+                        <h3 class="color_secondary rightside_title">실시간 인기 글</h3>
                     </div>
                     <a class="box_rightside_list color_secondary" href="">안</a>
                     <a class="box_rightside_list color_secondary" href="">안</a>
@@ -554,9 +598,14 @@
                 <div class="box_rightside">
                     <!-- <div class="box_rightside_flex"> -->
                     <div>
-                        <h3 class="color_secondary">HOT 게시물</h3>
+                        <h3 class="color_secondary rightside_title">HOT 게시물</h3>
                     </div>
-                    <a class="box_rightside_list color_secondary" href="">안</a>
+                    <a class="box_rightside_list color_secondary" href="">
+
+                        <p class="hot_title">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</p>
+                        <time>04/03 17:52</time>
+
+                    </a>
                     <a class="box_rightside_list color_secondary" href="">안</a>
                     <a class="box_rightside_list color_secondary" href="">안</a>
                     <a class="box_rightside_list color_secondary" href="">안</a>
