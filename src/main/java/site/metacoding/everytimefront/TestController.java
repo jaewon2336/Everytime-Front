@@ -59,4 +59,9 @@ public class TestController {
     public String deleteAccount() {
         return "user/deleteAccountForm";
     }
+
+    @GetMapping("/message")
+    public String message() {
+        return "message/messageForm";
+    }
 }
