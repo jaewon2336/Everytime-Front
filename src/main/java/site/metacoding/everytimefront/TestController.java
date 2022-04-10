@@ -54,4 +54,9 @@ public class TestController {
     public String updatePassword() {
         return "user/passwordUpdateForm";
     }
+
+    @GetMapping("/user/delete")
+    public String deleteAccount() {
+        return "user/deleteAccountForm";
+    }
 }
