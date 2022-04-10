@@ -49,4 +49,9 @@ public class TestController {
     public String updateNickname() {
         return "user/nicknameUpdateForm";
     }
+
+    @GetMapping("/update/password")
+    public String updatePassword() {
+        return "user/passwordUpdateForm";
+    }
 }
