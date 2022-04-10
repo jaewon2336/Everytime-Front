@@ -44,4 +44,9 @@ public class TestController {
     public String updateEmail() {
         return "user/emailUpdateForm";
     }
+
+    @GetMapping("/update/nickname")
+    public String updateNickname() {
+        return "user/nicknameUpdateForm";
+    }
 }

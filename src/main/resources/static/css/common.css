@@ -373,6 +373,10 @@
     font-weight: bold;
 }
 
+.description span {
+    color: #C62917;
+}
+
 a {
     text-decoration: none;
     color: #737373;
