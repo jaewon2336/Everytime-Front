@@ -39,4 +39,9 @@ public class TestController {
     public String userInfo() {
         return "user/detail";
     }
+
+    @GetMapping("/update/email")
+    public String updateEmail() {
+        return "user/emailUpdateForm";
+    }
 }
