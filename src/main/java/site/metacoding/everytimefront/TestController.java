@@ -10,4 +10,9 @@ public class TestController {
     public String home() {
         return "post/main";
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "post/test";
+    }
 }
