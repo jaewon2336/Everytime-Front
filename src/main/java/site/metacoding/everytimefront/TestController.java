@@ -39,4 +39,24 @@ public class TestController {
     public String userInfo() {
         return "user/detail";
     }
+
+    @GetMapping("/update/email")
+    public String updateEmail() {
+        return "user/emailUpdateForm";
+    }
+
+    @GetMapping("/update/nickname")
+    public String updateNickname() {
+        return "user/nicknameUpdateForm";
+    }
+
+    @GetMapping("/update/password")
+    public String updatePassword() {
+        return "user/passwordUpdateForm";
+    }
+
+    @GetMapping("/user/delete")
+    public String deleteAccount() {
+        return "user/deleteAccountForm";
+    }
 }

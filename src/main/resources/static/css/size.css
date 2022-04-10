@@ -171,6 +171,49 @@
     padding-bottom: 20px;
 }
 
+/******************************/
+.my_m_md_3 {
+    margin: 24px;
+}
+
+.my_p_md_3 {
+    padding: 24px;
+}
+
+/*margin*/
+.my_ml_md_3 {
+    margin-left: 24px;
+}
+
+.my_mr_md_3 {
+    margin-right: 24px;
+}
+
+.my_mt_md_3 {
+    margin-top: 24px;
+}
+
+.my_mb_md_3 {
+    margin-bottom: 24px;
+}
+
+/*padding*/
+.my_pl_md_3 {
+    padding-left: 24px;
+}
+
+.my_pr_md_3 {
+    padding-right: 24px;
+}
+
+.my_pt_md_3 {
+    padding-top: 24px;
+}
+
+.my_pb_md_3 {
+    padding-bottom: 24px;
+}
+
 
 /******************************/
 /*-------------라지 사이즈-------------*/
