@@ -1,3 +1,90 @@
+/*-------------스몰 사이즈-------------*/
+.my_m_sm_1 {
+    margin: 10px;
+}
+
+.my_p_sm_1 {
+    padding: 10px;
+}
+
+/*margin*/
+.my_ml_sm_1 {
+    margin-left: 10px;
+}
+
+.my_mr_sm_1 {
+    margin-right: 10px;
+}
+
+.my_mt_sm_1 {
+    margin-top: 10px;
+}
+
+.my_mb_sm_1 {
+    margin-bottom: 10px;
+}
+
+/*padding*/
+.my_pl_sm_1 {
+    padding-left: 10px;
+}
+
+.my_pr_sm_1 {
+    padding-right: 10px;
+}
+
+.my_pt_sm_1 {
+    padding-top: 10px;
+}
+
+.my_pb_sm_1 {
+    padding-bottom: 10x;
+}
+
+/******************************/
+.my_m_sm_2 {
+    margin: 5px;
+}
+
+.my_p_sm_2 {
+    padding: 5px;
+}
+
+/*margin*/
+.my_ml_sm_2 {
+    margin-left: 5px;
+}
+
+.my_mr_sm_2 {
+    margin-right: 5px;
+}
+
+.my_mt_sm_2 {
+    margin-top: 5px;
+}
+
+.my_mb_sm_2 {
+    margin-bottom: 5px;
+}
+
+/*padding*/
+.my_pl_sm_2 {
+    padding-left: 5px;
+}
+
+.my_pr_sm_2 {
+    padding-right: 5px;
+}
+
+.my_pt_sm_2 {
+    padding-top: 5px;
+}
+
+.my_pb_sm_2 {
+    padding-bottom: 5px;
+}
+
+/******************************/
 /*-------------미디움 사이즈-------------*/
 .my_m_md_1 {
     margin: 15px;
@@ -41,6 +128,51 @@
     padding-bottom: 15px;
 }
 
+/******************************/
+.my_m_md_2 {
+    margin: 20px;
+}
+
+.my_p_md_2 {
+    padding: 20px;
+}
+
+/*margin*/
+.my_ml_md_2 {
+    margin-left: 20px;
+}
+
+.my_mr_md_2 {
+    margin-right: 20px;
+}
+
+.my_mt_md_2 {
+    margin-top: 20px;
+}
+
+.my_mb_md_2 {
+    margin-bottom: 20px;
+}
+
+/*padding*/
+.my_pl_md_2 {
+    padding-left: 20px;
+}
+
+.my_pr_md_2 {
+    padding-right: 20px;
+}
+
+.my_pt_md_2 {
+    padding-top: 20px;
+}
+
+.my_pb_md_2 {
+    padding-bottom: 20px;
+}
+
+
+/******************************/
 /*-------------라지 사이즈-------------*/
 .my_m_lg_1 {
     margin: 30px;
@@ -84,6 +216,7 @@
     padding-bottom: 30px;
 }
 
+/******************************/
 /*-------------엑스라지 사이즈-------------*/
 .my_m_xl_1 {
     margin: 50px;
@@ -125,4 +258,48 @@
 
 .my_pb_xl_1 {
     padding-bottom: 50px;
+}
+
+/******************************/
+
+.my_m_xl_2 {
+    margin: 100px;
+}
+
+.my_p_xl_2 {
+    padding: 100px;
+}
+
+/*margin*/
+.my_ml_xl_2 {
+    margin-left: 100px;
+}
+
+.my_mr_xl_2 {
+    margin-right: 100px;
+}
+
+.my_mt_xl_2 {
+    margin-top: 100px;
+}
+
+.my_mb_xl_2 {
+    margin-bottom: 100px;
+}
+
+/*padding*/
+.my_pl_xl_2 {
+    padding-left: 100px;
+}
+
+.my_pr_xl_2 {
+    padding-right: 100px;
+}
+
+.my_pt_xl_2 {
+    padding-top: 100px;
+}
+
+.my_pb_xl_2 {
+    padding-bottom: 100px;
 }
