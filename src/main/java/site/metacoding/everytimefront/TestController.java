@@ -64,4 +64,9 @@ public class TestController {
     public String message() {
         return "message/messageForm";
     }
+
+    @GetMapping("/community")
+    public String community() {
+        return "qna/communityRule";
+    }
 }

@@ -1,0 +1,47 @@
+.my_qna_box {
+    margin-top: 100px;
+    padding: 24px;
+    margin: 24px auto 0 auto;
+    width: 780px;
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+}
+
+.my_qna_box h1 {
+    margin-bottom: 24px;
+    line-height: 30px;
+    color: #444444;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.my_qna_box h3 {
+    margin: 48px 0 8px 0;
+    line-height: 26px;
+    color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.my_qna_box p {
+    margin-top: 8px;
+    line-height: 22px;
+    color: #444444;
+    font-size: 16px;
+}
+
+.my_qna_box ol {
+    list-style-type: disc;
+    margin-top: 8px;
+    line-height: 22px;
+    color: #444444;
+    font-size: 16px;
+}
+
+.my_qna_box li {
+    list-style-type: decimal;
+    margin-top: 8px;
+    line-height: 22px;
+    color: #444444;
+    font-size: 16px;
+}
