@@ -3,6 +3,7 @@
 
 <head>
     <title>에브리타임</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -16,11 +17,9 @@
 
         a {
             text-decoration: none;
+            color: #444444;
         }
 
-        h3 {
-            padding: 10px;
-        }
 
         time {
             color: #a6a6a6;
@@ -71,17 +70,6 @@
             height: 100%;
         }
 
-        .box_container {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            margin: 0 auto 25px auto;
-            width: 1180px;
-            height: 2241px;
-
-
-        }
-
         .container {
             width: 1180px;
             display: flex;
@@ -100,7 +88,6 @@
             width: 600px;
             height: 100%;
             flex-direction: column;
-
         }
 
         .rightside {
@@ -111,20 +98,28 @@
 
         }
 
+        .ml_5 {
+            margin-left: 5px;
+        }
+
         .ml_10 {
-            margin: 0 0 0 10px;
+            margin-left: 10px;
         }
 
         .mb_5 {
-            margin: 0 0 5px 0;
+            margin-bottom: 5px;
         }
 
         .mb_25 {
-            margin: 0 0 25px 0;
+            margin-bottom: 25px;
         }
 
         .mt_15 {
-            margin: 15px 0 0 0;
+            margin-top: 15px;
+        }
+
+        .mv_5 {
+            margin: 5px 0px;
         }
 
         .mv_25 {
@@ -135,13 +130,12 @@
             background-color: #f9f9f9;
         }
 
+
         .box_profile {
             display: flex;
             flex-direction: column;
             align-items: center;
-
             width: 175px;
-            height: 217px;
             border: 1px solid #d6d6d6;
             padding: 15px;
         }
@@ -175,17 +169,9 @@
             font-size: 14px;
         }
 
-        .banner {
-            width: 100%;
-            height: 160px;
-            background-image: url("/bannerImg2.png");
-            background-size: cover;
-            background-position: center;
-        }
 
         .box_board {
             width: 100%;
-
             height: 192px;
             justify-content: space-between;
         }
@@ -193,10 +179,10 @@
         .box_rightside {
             display: flex;
             width: 323px;
-            height: 230px;
+            height: 240px;
             flex-direction: column;
             border: 1px solid #d6d6d6;
-
+            margin-bottom: 5px;
         }
 
 
@@ -213,6 +199,7 @@
             flex: 1;
             display: flex;
             padding: 0 10px;
+            border-top: 1px solid #e3e3e3;
         }
 
 
@@ -227,6 +214,7 @@
             font-size: 14px;
             font-weight: bold;
             color: #c62917;
+            margin-left: 10px;
         }
 
         .board_flex {
@@ -265,6 +253,7 @@
 
         .btns {
             display: flex;
+            justify-content: center;
             color: #666;
             font-size: 12px;
             letter-spacing: -0.5px;
@@ -401,10 +390,22 @@
             background-position: right center;
         }
 
+        .search_text:focus {
+            outline: none;
+        }
+
+        .rightside_title_box {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            background-color: #f9f9f9;
+        }
+
         .rightside_title {
             color: #3744a5;
             font-size: 14px;
             font-weight: bold;
+            margin-left: 10px;
         }
 
         .popular_title {
@@ -412,12 +413,20 @@
             font-size: 13px;
             font-weight: bold;
             overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+
         }
 
         .popular_content {
-            flex: 4;
+            flex: 2;
             font-size: 13px;
             overflow: hidden;
+            display: -webkit-box;
+            margin-bottom: 5px;
+            text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
@@ -431,344 +440,337 @@
     </style>
 </head>
 
-<body class="container">
+<body>
+    <div class="container mv_25">
 
-
-
-    <!-- 왼쪽 메뉴 시작 -->
-    <div class="leftside">
-        <div class="box_profile color_secondary mb_5">
-            <img class="img_profile" src="/profileImg.png" alt="">
-            <div class="nickname">닉네임</div>
-            <div class="name">이름</div>
-            <div class="name">username</div>
-            <ul class="btns mt_15">
-                <a class="btn_profile btn_myinfo" href="">내 정보</a>
-                <a class="btn_profile btn_logout" href="">로그아웃</a>
-            </ul>
-        </div>
-        <div class="box_small color_secondary mb_5">
-            <div class="box_small_list"><a class="myarticle" href="">내가 쓴
-                    글</a>
+        <!-- 왼쪽 메뉴 시작 -->
+        <div class="leftside">
+            <div class="box_profile color_secondary mb_5">
+                <img class="img_profile" src="/profileImg.png" alt="">
+                <div class="nickname">닉네임</div>
+                <div class="name">이름</div>
+                <div class="name">username</div>
+                <div class="btns mt_15">
+                    <a class="btn_profile btn_myinfo" href="">내 정보</a>
+                    <a class="btn_profile btn_logout" href="">로그아웃</a>
+                </div>
             </div>
-            <div class="box_small_list"><a class="mycommentarticle" href="">댓글 단
-                    글</a></div>
-            <div class="box_small_list"><a class="myscrap" href="">내
-                    스크랩</a></div>
+            <div class="box_small color_secondary mb_5">
+                <div class="box_small_list"><a class="myarticle" href="">내가 쓴
+                        글</a>
+                </div>
+                <div class="box_small_list"><a class="mycommentarticle" href="">댓글 단
+                        글</a></div>
+                <div class="box_small_list"><a class="myscrap" href="">내
+                        스크랩</a></div>
+            </div>
+            <div class="box_small mb_5"><img src="/card01.png" height="100%"></div>
+            <div class="box_small mb_5"><img src="/card02.jpg" height="100%"></div>
+            <div class=" box_small mb_5"><img src="/card03.jpg" height="100%"></div>
         </div>
-        <div class="box_small mb_5"><img src="/card01.png" height="100%"></div>
-        <div class="box_small mb_5"><img src="/card02.jpg" height="100%"></div>
-        <div class=" box_small mb_5"><img src="/card03.jpg" height="100%"></div>
+        <!-- 왼쪽 메뉴 끝 -->
+
+        <!-- 중간 메뉴 시작 -->
+        <div class="main">
+
+            <!-- 게시판 시작 -->
+            <div class="box_board mb_5">
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">자유게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">비밀게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box_board mb_5">
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">졸업생게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">새내기게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ 21세기 먼나라 이웃나라 이탈리아 만화로 보는 조선 왕조 500년
+                                </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_content">
+                                <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
+
+                                <time>04/08 13:29</time>
+                                <ul class="status">
+                                    <li class="vote active">3</li>
+                                    <li class="comment active">4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box_board mb_5">
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">시사·이슈</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">취업·진로</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box_board mb_5">
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">홍보게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">동아리·학회</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box_board mb_5">
+                <div class="board">
+                    <div class="board_flex">
+                        <div>
+                            <h3><a class="board_title" href="">장터게시판</a></h3>
+                        </div>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                        <a class="board_list" href="">
+                            <div class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</div>
+                            <time class="board_time">3분 전</time>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 게시판 끝 -->
+        </div>
+        <!-- 중간 메뉴 끝 -->
+        <!-- 오른쪽 메뉴 시작 -->
+        <div class="rightside">
+            <form class="search mb_5" action="">
+                <input class="search_text" type="text" placeholder="전체 게시판의 글을 검색하세요!">
+            </form>
+            <div class="box_rightside">
+                <div class="rightside_title_box">
+                    <h3 class="color_secondary rightside_title">실시간 인기 글</h3>
+                </div>
+                <a class="box_popular_list column color_secondary" href="">
+                    <div class="popular_title mv_5 ">밖에서 노래 소리가 들린다. 광고 트럭이 지나가는건가? 이 소리는 무슨 소리일까</div>
+                    <div class="popular_content">왜일까? 나도 모르는 사이에 벌써 야구 시즌이 온건가? 날씨가 참 좋구나.</div>
+                    <div class="popular_status">
+                        <time>자유게시판</time>
+                        <div class="status">
+                            <li class="vote active">3</li>
+                            <li class="comment active">4</li>
+                        </div>
+                    </div>
+                </a>
+                <a class="box_popular_list column color_secondary " href="">
+                    <div class="popular_title mv_5">밖에서 노래 소리가 들린다. 광고 트럭이 지나가는건가? 이 소리는 무슨 소리일까</div>
+                    <div class="popular_content">왜일까? 나도 모르는 사이에 벌써 야구 시즌이 온건가? 날씨가 참 좋구나. </div>
+                    <div class="popular_status">
+                        <time>자유게시판</time>
+                        <div class="status">
+                            <li class="vote active">3</li>
+                            <li class="comment active">4</li>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box_rightside">
+                <div class="rightside_title_box">
+                    <h3 class="color_secondary rightside_title">HOT 게시물</h3>
+                </div>
+                <a class="box_hot_list color_secondary" href="">
+                    <div class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</div>
+                    <time class="hot_time">04/03 17:52</time>
+                </a>
+                <a class="box_hot_list color_secondary" href="">
+                    <div class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</div>
+                    <time class="hot_time">10분 전</time>
+                </a>
+                <a class="box_hot_list color_secondary" href="">
+                    <div class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</div>
+                    <time class="hot_time">04/03 17:52</time>
+                </a>
+                <a class="box_hot_list color_secondary" href="">
+                    <div class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</div>
+                    <time class="hot_time">04/03 17:52</time>
+                </a>
+
+            </div>
+        </div>
+        <!-- 오른쪽 메뉴 끝 -->
     </div>
-    <!-- 왼쪽 메뉴 끝 -->
-
-    <!-- 중간 메뉴 시작 -->
-    <div class="main">
-        <div class="banner mb_25"></div>
-
-        <!-- 게시판 시작 -->
-        <div class="box_board mb_5">
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">자유게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">비밀게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box_board mb_5">
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">졸업생게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">새내기게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ 21세기 먼나라 이웃나라 이탈리아 만화로 보는 조선 왕조 500년
-                            </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a class="board_list" href="">
-                        <div class="board_content">
-                            <p class="board_p">고전읽기와 토론 ㅎㅅㅂ 교수님 수업 듣는분? ㅠㅠ </p>
-
-                            <time>04/08 13:29</time>
-                            <ul class="status">
-                                <li class="vote active">3</li>
-                                <li class="comment active">4</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box_board mb_5">
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">시사·이슈</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">취업·진로</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box_board mb_5">
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">홍보게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">동아리·학회</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box_board mb_5">
-            <div class="board">
-                <div class="board_flex">
-                    <div>
-                        <h3><a class="board_title" href="">장터게시판</a></h3>
-                    </div>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                    <a class="board_list" href="">
-                        <p class="board_article">게임 하고 싶어 게임 하고 싶어 게임 하고 싶어</p>
-                        <time class="board_time">3분 전</time>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- 게시판 끝 -->
-    </div>
-    <!-- 중간 메뉴 끝 -->
-    <!-- 오른쪽 메뉴 시작 -->
-    <div class="rightside">
-        <form class="search mb_5" action="">
-            <input class="search_text" type="text" placeholder="전체 게시판의 글을 검색하세요!">
-        </form>
-        <div class="box_rightside mb_5">
-            <!-- <div class="box_rightside_flex"> -->
-            <div>
-                <h3 class="color_secondary rightside_title">실시간 인기 글</h3>
-            </div>
-            <a class="box_popular_list column color_secondary" href="">
-                <div class="popular_title">밖에서 노래 소리가 들린다. 광고 트럭이 지나가는건가? 이 소리는 무슨 소리일까</div>
-                <div class="popular_content">왜일까? 나도 모르는 사이에 벌써 야구 시즌이 온건가? 날씨가 참 좋구나. 등산을 가면 좋을텐데. 아냐 사실은 게임이
-                    하고 싶어</div>
-                <div class="popular_status">
-                    <time>자유게시판</time>
-                    <ul class="status">
-                        <li class="vote active">3</li>
-                        <li class="comment active">4</li>
-                    </ul>
-                </div>
-            </a>
-            <a class="box_popular_list column color_secondary mb_5" href="">
-                <div class="popular_title">밖에서 노래 소리가 들린다. 광고 트럭이 지나가는건가? 이 소리는 무슨 소리일까</div>
-                <div class="popular_content">왜일까? 나도 모르는 사이에 벌써 야구 시즌이 온건가? 날씨가 참 좋구나. 등산을 가면 좋을텐데. 아냐 사실은 게임이
-                    하고 싶어 가나다라마바사가나다라마바사가나다라마바사가나다라마바사</div>
-                <div class="popular_status">
-                    <time>자유게시판</time>
-                    <ul class="status">
-                        <li class="vote active">3</li>
-                        <li class="comment active">4</li>
-                    </ul>
-                </div>
-            </a>
-
-        </div>
-        <div class="box_rightside">
-            <div>
-                <h3 class="color_secondary rightside_title">HOT 게시물</h3>
-            </div>
-            <a class="box_hot_list color_secondary" href="">
-                <p class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</p>
-                <time class="hot_time">04/03 17:52</time>
-            </a>
-            <a class="box_hot_list color_secondary" href="">
-                <p class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</p>
-                <time class="hot_time">10분 전</time>
-            </a>
-            <a class="box_hot_list color_secondary" href="">
-                <p class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</p>
-                <time class="hot_time">04/03 17:52</time>
-            </a>
-            <a class="box_hot_list color_secondary" href="">
-                <p class="hot_content">프랭클린 자서전 나의 라임오렌지 나무 악마와 미스 프랭 선택 말테의 수기</p>
-                <time class="hot_time">04/03 17:52</time>
-            </a>
-
-        </div>
-    </div>
-    <!-- 오른쪽 메뉴 끝 -->
-    <div>
-    </div>
-
 
 </body>
 
