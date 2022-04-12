@@ -5,10 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class TestController {
-    @GetMapping("/")
-    public String main() {
-        return "layout/header";
-    }
 
     @GetMapping("/loginForm")
     public String loginForm() {
@@ -63,6 +59,11 @@ public class TestController {
     @GetMapping("/message")
     public String message() {
         return "message/messageForm";
+    }
+
+    @GetMapping("/main")
+    public String home() {
+        return "post/main";
     }
 
     @GetMapping("/community")
