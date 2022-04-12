@@ -70,4 +70,9 @@ public class TestController {
     public String community() {
         return "qna/communityRule";
     }
+
+    @GetMapping("/qnaForm")
+    public String qnaForm() {
+        return "qna/qnaForm";
+    }
 }
