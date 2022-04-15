@@ -75,4 +75,9 @@ public class TestController {
     public String qnaForm() {
         return "qna/qnaForm";
     }
+
+    @GetMapping("/post/detail")
+    public String detail() {
+        return "post/detail";
+    }
 }

@@ -310,7 +310,7 @@ time {
 }
 
 .myarticle {
-    background-image: url("/myarticle.png");
+    background-image: url("/images/myarticle.png");
     background-size: 12px auto;
     background-position: 15px center;
     box-sizing: border-box;
@@ -322,7 +322,7 @@ time {
 }
 
 .mycommentarticle {
-    background-image: url("/mycommentarticle.png");
+    background-image: url("/images/mycommentarticle.png");
     background-size: 12px auto;
     background-position: 15px center;
     box-sizing: border-box;
@@ -334,7 +334,7 @@ time {
 }
 
 .myscrap {
-    background-image: url("/myscrap.png");
+    background-image: url("/images/myscrap.png");
     background-size: 12px auto;
     background-position: 15px center;
     box-sizing: border-box;
@@ -345,7 +345,7 @@ time {
 }
 
 .vote {
-    background-image: url("/vote.png");
+    background-image: url("/images/vote.png");
     float: left;
     margin-right: 5px;
     padding-left: 15px;
@@ -359,7 +359,7 @@ time {
 }
 
 .comment {
-    background-image: url("/comment.png");
+    background-image: url("/images/comment.png");
     float: left;
     margin-right: 5px;
     padding-left: 15px;
@@ -386,7 +386,7 @@ time {
     box-sizing: border-box;
     color: #292929;
     font-size: 14px;
-    background-image: url("/search.png");
+    background-image: url("/images/search.png");
     background-size: 40px 40px;
     background-repeat: no-repeat;
     background-position: right center;
