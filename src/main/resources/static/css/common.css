@@ -181,6 +181,24 @@
     border-radius: 12px;
 }
 
+.btn_chooseFile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C62917; 
+    width: 120px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+}
+
+.btn_chooseFile:hover {
+    cursor: pointer;
+}
+
 .description {
     margin-top: 24px;
 }
@@ -190,6 +208,10 @@
     line-height: 18px;
     color: #737373;
     font-size: 12px;
+}
+
+.my_hidden {
+    display: none;
 }
 
 /************************/
@@ -212,3 +234,4 @@ form {
     padding: 0 24px 24px 24px;
     display: block;
 }
+
