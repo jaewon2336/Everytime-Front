@@ -80,4 +80,9 @@ public class TestController {
     public String detail() {
         return "post/detail";
     }
+
+    @GetMapping("/user/certificate-registration")
+    public String certificateForm() {
+        return "user/certificateRegistrationForm";
+    }
 }
