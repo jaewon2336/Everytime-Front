@@ -86,4 +86,8 @@ public class TestController {
         return "qna/qnaAccount";
     }
 
+    @GetMapping("/user/certificate-registration")
+    public String certificateForm() {
+        return "user/certificateRegistrationForm";
+    }
 }
