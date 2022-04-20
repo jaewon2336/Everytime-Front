@@ -81,6 +81,11 @@ public class TestController {
         return "post/detail";
     }
 
+    @GetMapping("/qnaAccount")
+    public String qnaAccount() {
+        return "qna/qnaAccount";
+    }
+
     @GetMapping("/user/certificate-registration")
     public String certificateForm() {
         return "user/certificateRegistrationForm";
