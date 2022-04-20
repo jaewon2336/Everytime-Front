@@ -80,4 +80,10 @@ public class TestController {
     public String detail() {
         return "post/detail";
     }
+
+    @GetMapping("/qnaAccount")
+    public String qnaAccount() {
+        return "qna/qnaAccount";
+    }
+
 }
