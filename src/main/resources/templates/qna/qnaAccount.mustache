@@ -1,4 +1,75 @@
 {{> /layout/header}}
+<style>
+    .test {
+        display: none;
+    }
+
+    .hidden_list {
+        display: none;
+        background-color: #F2F2F2;
+        border-bottom: 1px solid #d6d6d6;
+        color: black;
+        padding: 15px 20px;
+        font-size: 14px;
+        flex: 1;
+
+    }
+
+    .hidden_list_end {
+        display: none;
+        background-color: #F2F2F2;
+        border-top: 1px solid #d6d6d6;
+        color: black;
+        padding: 10px;
+    }
+
+    .font_color_red {
+        color: #c62917;
+        font-weight: bold;
+    }
+
+    .qna_account_list {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background-image: url("/images/faqIcon.png");
+        background-repeat: no-repeat;
+        background-position: 98% 50%;
+        text-decoration: none;
+        height: 50px;
+        border-bottom: 1px solid #d6d6d6;
+        padding-left: 19px;
+    }
+
+    .qna_account_wrap_list {
+        font-size: 14px;
+        flex: 1;
+        display: flex;
+    }
+
+    .qna_account_list_end {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background-image: url("/images/faqIcon.png");
+        background-repeat: no-repeat;
+        background-position: 98% 50%;
+        text-decoration: none;
+        height: 50px;
+        padding-left: 19px;
+    }
+
+    .qna_account_list:hover {
+        background-color: #f8f8f8;
+    }
+
+    .qna_account_wrap {
+        width: 780px;
+        background-color: white;
+        border: 1px solid #e3e3e3;
+    }
+</style>
+
 
 <body class="my_bg_secondary">
     <div class="container my_mt_xl_2 my_mb_md_2">
@@ -358,6 +429,7 @@
         var con10 = document.getElementById("myDIV10");
         var con11 = document.getElementById("myDIV11");
         var con12 = document.getElementById("myDIV12");
+
         if (num == 1) {
             con2.style.display = 'none';
             con3.style.display = 'none';
@@ -649,7 +721,6 @@
             $("#color-change10").removeClass("font_color_red");
         }
     }
-
 
 </script>
 

@@ -8,7 +8,6 @@
     width: 1100px;
     padding: 10px;
     font-weight: bold;
-
 }
 
 .write {
@@ -145,6 +144,12 @@
 }
 
 .club_top {
+    border: 1px solid #d6d6d6;
+    display: flex;
+    margin: 5px 0px 0px 60px;
+    justify-content: left;
+    padding-left: 50px;
+    width: 1100px;
     border: 3px solid #d6d6d6;
     display: flex;
     background-color: #f8f8f8;
