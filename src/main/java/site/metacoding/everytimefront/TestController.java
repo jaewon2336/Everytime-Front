@@ -86,8 +86,38 @@ public class TestController {
         return "qna/qnaAccount";
     }
 
+    @GetMapping("/qnaSchool")
+    public String qnaSchool() {
+        return "qna/qnaSchool";
+    }
+
     @GetMapping("/user/certificate-registration")
     public String certificateForm() {
         return "user/certificateRegistrationForm";
+    }
+
+    @GetMapping("/qnaTimetable")
+    public String qnaTimetable() {
+        return "qna/qnaTimetable";
+    }
+
+    @GetMapping("/qnaCommunity")
+    public String qnaCommunity() {
+        return "qna/qnaCommunity";
+    }
+
+    @GetMapping("/qnaAnony")
+    public String qnaAnony() {
+        return "qna/qnaAnony";
+    }
+
+    @GetMapping("/qnaReport")
+    public String qnaReport() {
+        return "qna/qnaReport";
+    }
+
+    @GetMapping("/qnaOther")
+    public String qnaOther() {
+        return "qna/qnaOther";
     }
 }
